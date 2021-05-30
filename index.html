@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700 &display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="favicon/icon.svg">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body class="page-body">
 
@@ -24,43 +28,47 @@
 
 	  <main class="container">
 	  	<h1>Седона</h1>
-	  	<img src="" width="456.65" height="350.88">
-	  	<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-	  	<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+	  	<div class="welcome">
+	  		<img src="images/welcome.png" width="456.65" height="350.88">
+	  	</div>
+	  	<div class="text">
+	  		<h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+	  		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+	  	</div>
 
 	  	<section class="features">
 	  		<h2>Преимущества</h2>
 	  		<ul class="features-list">
 	  			<li class="features-item">
-	  				<div>
+	  				<div class="features-itemImg">
 	  					<h3>Настоящий городок</h3>
-	  					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>	
+	  					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+	  					<img src="images/image.jpg" width="800" height="256" alt="Пейзаж_1">	
 	  				</div>
-	  				<img src="" width="800" height="256" alt="Пейзаж_1">
 	  			</li>
 	  			<li class="features-item">
 	  				<h3>Допольнительные преимущества</h3>
 	  				<ul class="features-list-extra">
 	  					<li class="features-item-extra">
-	  						<h4>Жильё</h4>
+	  						<h3>Жильё</h3>
 	  						<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 	  					</li>
 	  					<li class="features-item-extra">
-	  						<h4>Еда</h4>
+	  						<h3>Еда</h3>
 	  						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 	  					</li>
 	  					<li class="features-item-extra">
-	  						<h4>Сувениры</h4>
+	  						<h3>Сувениры</h3>
 	  						<p>Не только китайского, но и местного производства!</p>
 	  					</li>
 	  				</ul>
 	  			</li>
 	  			<li class="features-item">
-	  				<div>
+	  				<div class="features-itemImg">
 	  					<h3>Там есть Мост дьявола</h3>
 	  					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+	  					<img src="images/image_1.jpg" width="800" height="256" alt="Пейзаж_2">
 	  				</div>
-	  				<img src="" width="800" height="256" alt="Пейзаж_2">
 	  			</li>
 	  			<li class="features-item">
 	  				<h3>Небольшая площадь</h3>
@@ -98,20 +106,20 @@
 	  	</section>
 
 	  	<section class="footer-social">
-	  		<ul>
+	  		<ul class="footer-social-list">
 	  			<li>
-	  				<div>
-	  					<a class="social-button" href="">Twitter</a>	
+	  				<div class="social-button twitter">
+	  					<a href="">Twitter</a>	
 	  				</div>
 	  			</li>
 	  			<li>
-	  				<div>
-	  					<a class="social-button" href="">Facebook</a>	
+	  				<div class="social-button facebook">
+	  					<a href="">Facebook</a>	
 	  				</div>
 	  			</li>
 	  			<li>
-	  				<div>
-	  					<a class="social-button" href="">Youtube</a>	
+	  				<div class="social-button youtube">
+	  					<a href="">Youtube</a>	
 	  				</div>
 	  			</li>
 	  		</ul>
