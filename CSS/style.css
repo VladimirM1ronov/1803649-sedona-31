@@ -55,21 +55,16 @@
 /*Main*/
 
 .welcome {
-	width: 1200px;
-	height: 509px;
 	background-image: url(../images/background.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
 }
 
 .welcome img {
-	position: absolute;
     margin: auto;
 }
 
 .text {
-	width: 1200px;
-	height: 216px;
 	vertical-align: bottom;
 	text-align: center;
 	background-color: var(--basic-white);
@@ -243,3 +238,5 @@
 	background-color: #5496BD;
 	color: var(--basic-grey);
 }
+
+/*Catalog*/
