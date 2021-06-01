@@ -150,6 +150,10 @@
 
 /*footer*/
 
+.main-footer {
+	background-color: var(--basic-white);
+}
+
 .info {
 	font-weight: 700;
 	font-size: 21px;
@@ -240,3 +244,116 @@
 }
 
 /*Catalog*/
+
+
+.filter {
+	background-image: url(../images/catalog_background.png);
+	color: var(--basic-white);
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.filter fieldset {
+	border-style: none;
+}
+
+.filter-infrastructure {
+	font-size: 14px;
+	list-style: none;
+}
+
+.filter-habitation {
+	font-size: 14px;
+	list-style: none;	
+}
+
+.show {
+	font-size: 14px;
+	background-color: rgba(0, 125, 215, 0.1);
+	border: 2px solid var(--basic-white);
+	color: var(--basic-white);
+}
+
+.show:hover {
+	background-color: var(--basic-white);
+	color: var(--basic-black);
+}
+
+.sorting {
+	background-color: var(--basic-white);
+}
+
+.sorting-link {
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+	color: var(--basic-grey);
+	border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sorting-link:hover {
+	color: var(--basic-blue);
+}
+
+.sorting-link:focus {
+	color: var(--basic-black);
+}
+
+.value-sorting {
+	color: var(--basic-blue);
+	border-style: none;
+}
+
+/*Hotels*/
+
+.hotel-list {
+	background-color: var(--basic-white);
+}
+
+.hotel-list ul {
+	list-style: none;
+}
+
+.hotel-heading {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.hotel-heading a {
+	color: var(--basic-black);
+	text-decoration: none;
+}
+
+.more-detailed {
+	background-color: var(--basic-blue);
+	text-decoration: none;
+	color: var(--basic-white);
+}
+
+.book {
+	background-color: var(--basic-brown);
+	text-decoration: none;
+	color: var(--basic-white);
+}
+
+.more-detailed:hover {
+	background-color: #669EC0;
+}
+
+.more-detailed:focus {
+	background-color: #5496BD;
+}
+
+.book:hover {
+	background-color: #604E43;
+}
+
+.book:focus {
+	background-color: #503E33;
+	color: var(--basic-grey);	
+}
+
+.rating {
+	background-color: var(--basic-lightgrey);
+}
