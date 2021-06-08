@@ -50,9 +50,12 @@ h3 {
 /*Header*/
 
 .main-header {
+	box-sizing: border-box;
 	font-weight: 700;
+	width: 1200px;
 	height: 56px;
 	background-color: var(--basic-white);
+	padding: 15px 72px;
 }
 
 /*Main navigation*/
@@ -65,7 +68,7 @@ h3 {
 }
 
 .main-header-logo {
-	left: 531px;
+	left: 460px;
 	position: absolute;
 }
 
@@ -76,7 +79,7 @@ h3 {
 
 .site-navigation {
 	display: grid;
-	grid-template-columns: 200px 200px 200px 200px 200px 200px;
+	grid-template-columns: 176px 176px 176px 176px 176px 176px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -102,6 +105,7 @@ h3 {
 .menu-item-catalog {
 	grid-column-start: 6;
 	grid-column-end: 7;
+	justify-self: end;
 }
 
 .site-navigation a:hover {
@@ -180,12 +184,12 @@ h3 {
 	background-color: var(--basic-white);
 }
 
-.pov {
+.first-image {
 	grid-column-start: 2;
 	grid-column-end: -1;
 }
 
-.pov1 {
+.second-image {
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
@@ -401,26 +405,60 @@ h3 {
 
 /*Catalog*/
 
+.main-filter {
+	box-sizing: border-box;
+	padding-left: 72px;
+	padding-right: 72px;
+	padding-bottom: 32px;
+	padding-top: 26.5px;
+	height: 217px;
+	background-image: url(../images/catalog_background.png);
+}
+
+.main-filter h2 {
+	display: none;
+}
 
 .filter {
-	background-image: url(../images/catalog_background.png);
+	display: grid;
+	grid-template-columns: 264px 264px 527px;
 	color: var(--basic-white);
 	font-size: 16px;
 	line-height: 21px;
 }
 
 .filter fieldset {
+	padding: 0;
+	margin: 0;
 	border-style: none;
 }
 
-.filter-infrastructure {
+
+
+.filter-infastructure {
+	margin: 0;
+	padding: 0;
 	font-size: 14px;
 	list-style: none;
 }
 
 .filter-habitation {
+	margin: 0;
+	padding: 0;
 	font-size: 14px;
 	list-style: none;	
+}
+
+.filter-value {
+	display: flex;
+	flex-wrap: wrap;
+	width: 327px;
+	justify-self: end;
+}
+
+.value {
+	width: 159px;
+	height: 36px;
 }
 
 .show {
@@ -436,7 +474,28 @@ h3 {
 }
 
 .sorting {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 180px  min-content 1fr 40px;
+	height: 86px;
 	background-color: var(--basic-white);
+	padding-right: 73px;
+	padding-left: 94px;
+	padding-top: 29px;
+	padding-bottom: 33px;
+}
+
+.sorting  h2 {
+	font-size: 21px;
+	margin: 0;
+	padding: 0;
+	margin-right: 30px;
+}
+
+.sorting p {
+	margin: 0;
+	padding: 0;
+	margin-right: 40px;
 }
 
 .sorting-link {
@@ -445,6 +504,7 @@ h3 {
 	text-decoration: none;
 	color: var(--basic-grey);
 	border-bottom: 1px dashed var(--basic-blue);
+	margin-right: 32px;
 }
 
 .sorting-link:hover {
@@ -463,17 +523,56 @@ h3 {
 /*Hotels*/
 
 .hotel-list {
+	border-top: 1px solid black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 73px;
+	padding-right: 92px;
 	background-color: var(--basic-white);
+}
+
+.hotel-list h2 {
+	display: none;
 }
 
 .hotel-list ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.hotel-list-item h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.hotel-list-item p {
+	margin: 0;
+	padding: 0;
+}
+
+.hotel-list-item {
+	display: grid;
+	grid-template-columns: min-content 1fr 1fr;
+	margin: 30px 0;
+}
+
+.hotel-list-item:first-child {
+	margin-top: 0;
+}
+
+.hotel-list-item:last-child {
+	margin-bottom: 0;
 }
 
 .hotel-heading {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
+}
+
+.description {
+	margin-left: 29px;
 }
 
 .hotel-heading a {
@@ -511,5 +610,8 @@ h3 {
 }
 
 .rating {
+	justify-self: end;
+	width: 110px;
+	height: 27px;
 	background-color: var(--basic-lightgrey);
 }
