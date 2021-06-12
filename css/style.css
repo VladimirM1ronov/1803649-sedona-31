@@ -123,16 +123,20 @@ h3 {
 }
 
 .welcome {
+	display: flex;
+  	justify-content: center;
+  	align-content: space-between;
 	height: 509px;
 	background-image: url(../images/background.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
+	margin: 0;
 }
 
-.welcome {
-	margin: 0;
-    text-align: center;
-    vertical-align: bottom;
+.welcome img {
+	width: 456.65px;
+	height: 350.88px;
+	margin-top: 76px;
 }
 
 .text {
