@@ -123,6 +123,7 @@ h3 {
 }
 
 .welcome {
+	box-sizing: border-box;
 	display: flex;
   	justify-content: center;
   	align-content: space-between;
@@ -302,6 +303,9 @@ h3 {
 	background-color: #503E33;
 	color: var(--basic-grey);
 }
+.map img {
+	display: block;
+}
 
 /*footer*/
 
@@ -325,9 +329,11 @@ h3 {
 }
 
 .footer-social-list {
+	display: flex;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	margin-top: 36px;
 }
 
 .footer-social-list a {
