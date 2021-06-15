@@ -462,7 +462,7 @@ h3 {
 .filter-value {
 	display: flex;
 	flex-wrap: wrap;
-	width: 327px;
+	width: 340px;
 	justify-self: end;
 }
 
@@ -546,6 +546,8 @@ h3 {
 }
 
 .hotel-list ul {
+	display: flex;
+	flex-direction: column;
 	list-style: none;
 	margin: 0;
 	padding: 0;
