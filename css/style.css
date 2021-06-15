@@ -476,6 +476,7 @@ h3 {
 	background-color: rgba(0, 125, 215, 0.1);
 	border: 2px solid var(--basic-white);
 	color: var(--basic-white);
+	margin: auto;
 }
 
 .show:hover {
