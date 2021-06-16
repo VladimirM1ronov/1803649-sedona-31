@@ -466,6 +466,13 @@ h3 {
 	justify-self: end;
 }
 
+.hotel-value {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 210px;
+}
+
 .value {
 	width: 159px;
 	height: 36px;
