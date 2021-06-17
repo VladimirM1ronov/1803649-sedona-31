@@ -88,6 +88,7 @@ h3 {
 	top: -15px;
 	left: 460px;
 	position: absolute;
+	z-index: 1;
 }
 
 .site-navigation a {
@@ -139,19 +140,29 @@ h3 {
 .welcome {
 	box-sizing: border-box;
 	display: flex;
-  	justify-content: center;
-  	align-content: space-between;
+  justify-content: center;
+  align-content: space-between;
 	height: 509px;
 	background-image: url(../images/background.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
 	margin: 0;
 	padding-top: 76px;
+	position: relative;
 }
 
 .welcome img {
 	width: 456.65px;
 	height: 350.88px;
+}
+
+.welcome::after {
+	content: "";
+	position: absolute;
+	width: 1200px;
+	height: 57px;
+	background-image: url(../images/Shape.svg);
+	top: 453px;
 }
 
 .text {
