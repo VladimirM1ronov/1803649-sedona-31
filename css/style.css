@@ -70,7 +70,6 @@ h3 {
 	box-sizing: border-box;
 	font-weight: 700;
 	width: 1200px;
-	height: 56px;
 	background-color: var(--basic-white);
 	padding: 15px 72px;
 }
@@ -79,8 +78,6 @@ h3 {
 
 .main-navigation {
 	background-color: var(--basic-white);
-	display: grid;
-	grid-template-columns: min-content 1fr;
 	position: relative;
 }
 
@@ -97,34 +94,26 @@ h3 {
 }
 
 .site-navigation {
-	display: grid;
-	grid-template-columns: 176px 176px 176px 176px 176px 176px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.menu-item-info {
-	grid-column-start: 1;
-	grid-column-end: 2;
+.menu-item {
+	width: 264px;
 }
 
+.menu-item-info,
 .menu-item-photo {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	justify-self: end;
+	text-align: left;
 }
 
-.menu-item-map {
-	grid-column-start: 5;
-	grid-column-end: 6;
-	justify-self: start;
-}
-
+.menu-item-map,
 .menu-item-catalog {
-	grid-column-start: 6;
-	grid-column-end: 7;
-	justify-self: end;
+	text-align: right;
 }
 
 .site-navigation a:hover {
