@@ -519,20 +519,54 @@ h3 {
 }
 
 .amount-button {
+	position: relative;
 	box-sizing: border-box;
 	height: 38px;
 	width: 39px;
 	border-style: none;
 	background-color: var(--basic-light);
-	color: #A9A9A9;
+	color: rgba(0, 0, 0, 0);
 }
 
-.amount-button:hover {
-	color: var(--basic-black);
+
+.amount-button-minus::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 3px;
+	background-color: var(--basic-grey);
+	top: 17px;
+	right: 7px;
 }
 
-.amount-button:focus {
-	color: var(--basic-blue);
+.amount-button-plus::before,
+.amount-button-plus::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 3px;
+	background-color: var(--basic-grey);
+	z-index: 1;
+	top: 17px;
+	left: 12px;
+}
+
+.amount-button-plus::after {
+	transform: rotate(90deg);
+}
+
+.amount-button-plus:hover::after,
+.amount-button-plus:hover::before,
+.amount-button-minus:hover::before {
+	background-color: var(--basic-black);
+}
+
+.amount-button-plus:focus::after,
+.amount-button-plus:focus::before,
+.amount-button-minus:focus::before {
+	background-color: var(--basic-blue);
 }
 
 .searching-modal-button {
