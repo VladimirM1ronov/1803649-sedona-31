@@ -297,6 +297,7 @@ h3 {
 /*Searching hotel*/
 
 .searching-hotel {
+	position: relative;
 	height: 332px;
 	background-color: var(--basic-white);
 	line-height: 24px;
@@ -325,7 +326,7 @@ h3 {
 .searching-hotel-button {
 	background-color: var(--basic-brown);
 	color: var(--basic-white);
-	padding: 30px 125px;
+	padding: 30px 144px;
 	font-size: 21px;
 	font-weight: 700;
 	border-style: none;
@@ -450,6 +451,7 @@ h3 {
 /*Popup*/
 
 .modal {
+	position: absolute;
 	box-sizing: border-box;
 	width: 568px;
 	height: 395px;
@@ -457,6 +459,8 @@ h3 {
 	color: var(--basic-black);
 	font-weight: 700;
 	padding: 55px;
+	top: 332px;
+	left: 316px;
 }
 
 .searching-form {
