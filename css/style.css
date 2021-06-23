@@ -37,6 +37,8 @@ h3 {
 }
 
 .wrapper {
+	position: relative;
+
 	width: 1200px;
 
 	display: grid;
@@ -131,6 +133,7 @@ h3 {
 	display: flex;
   justify-content: center;
   align-content: space-between;
+  width: 100%;
 	height: 509px;
 	background-image: url(../images/background.jpg);
 	background-position: top center;
@@ -298,7 +301,7 @@ h3 {
 
 .searching-hotel {
 	position: relative;
-	height: 332px;
+	height: 291px;
 	background-color: var(--basic-white);
 	line-height: 24px;
 }
@@ -320,13 +323,15 @@ h3 {
 	font-weight: 700;
 	line-height: 24px;
 	color: var(--basic-black);
-	margin-bottom: 41px;
+	margin: 0;
+	margin-bottom: 24px;
 }
 
 .searching-hotel-button {
 	background-color: var(--basic-brown);
 	color: var(--basic-white);
-	padding: 30px 144px;
+	text-transform: uppercase;
+	padding: 30px 117px;
 	font-size: 21px;
 	font-weight: 700;
 	border-style: none;
@@ -343,6 +348,7 @@ h3 {
 }
 
 .map {
+	background-image: url(../images/map.png);
 	width: 1200px;
 	height: 594px;
 }
@@ -356,13 +362,18 @@ h3 {
 /*footer*/
 
 .main-footer {
-	position: relative;
-	bottom: 115px;
+	box-sizing: border-box;
+	width: 1200px;
+	height: 120px;
+	position: absolute;
+	bottom: 0px;
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
 	background-color: rgba(255, 255, 255, 0.85);
 	padding-right: 136px;
 	padding-left: 136px;
+	padding-top: 23px;
+	padding-bottom: 36px;
 }
 
 .catalog-footer {
@@ -379,6 +390,14 @@ h3 {
 	color: var(--basic-black);
 }
 
+.info p {
+	margin: 0;
+}
+
+.info p:first-child {
+	margin-bottom: 9px;
+}
+
 .info a {
 	color: var(--basic-black);
 	text-decoration: none;
@@ -392,7 +411,7 @@ h3 {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-top: 36px;
+	margin-top: 13px;
 }
 
 .footer-social-list a {
@@ -429,7 +448,7 @@ h3 {
 	justify-self: end;
 	font-size: 14px;
 	line-height: 26px;
-	margin-top: 43px;
+	margin-top: 20px;
 	cursor: pointer;
 	text-decoration: none;
 	color: var(--basic-black);
@@ -459,7 +478,7 @@ h3 {
 	color: var(--basic-black);
 	font-weight: 700;
 	padding: 55px;
-	top: 332px;
+	top: 291px;
 	left: 316px;
 }
 
@@ -480,6 +499,32 @@ h3 {
 	padding-bottom: 6px;
 	padding-left: 13px;
 	margin-bottom: 29px;
+}
+
+.calendar-arrival {
+	position: absolute;
+	width: 21px;
+	height: 23px;
+	top: 62px;
+	left: 477px;
+}
+
+.calendar-departure {
+	position: absolute;
+	width: 21px;
+	height: 23px;
+	top: 129px;
+	left: 477px;
+}
+
+.calendar-arrival:hover path,
+.calendar-departure:hover path {
+	fill: var(--basic-black);
+}
+
+.calendar-arrival:focus path,
+.calendar-departure:focus path {
+	fill: var(--basic-blue);
 }
 
 .searching-form label {
@@ -596,7 +641,12 @@ h3 {
 
 /*Catalog*/
 
+.menu-item-catalog .current {
+	color: var(--basic-brown);
+}
+
 .main-filter {
+	width: 100%;
 	box-sizing: border-box;
 	padding-left: 72px;
 	padding-right: 26px;
@@ -605,7 +655,6 @@ h3 {
 	height: 217px;
 	background-image: url(../images/catalog_background.png);
 }
-
 
 .filter {
 	display: grid;
@@ -672,44 +721,22 @@ input[type="checkbox"] {
 	user-select: none;
 }
 
-.filter-infastructure-item::before,
-.filter-habitation-item::before {
+.filter-infastructure-item::after,
+.filter-habitation-item::after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	width: 23px;
 	height: 23px;
-	border: 2px solid var(--basic-white);
+	background-image: url(../images/checkbox-off.svg);
 	border-radius: 3px;
 	right: 239px;
+	top: 0px;
 }
 
 
-.filter-infastructure-checkbox:checked + label::after {
-	box-sizing: border-box;
-	content: "";
-	position: absolute;
-	width: 27px;
-	height: 23px;
+.filter-habitation-checkbox:checked + .filter-habitation-item::after {
 	background-image: url(../images/checkbox-on.svg);
-	background-repeat: repeat;
-	right: 235px;
-}
-
-/*.filter-infastructure-checkbox:checked .filter-infastructure-item::before {
-	display: none;
-}*/
-
-.filter-habitation-checkbox:checked + label::after {
-	box-sizing: border-box;
-	content: "";
-	position: absolute;
-	width: 27px;
-	height: 23px;
-	background-image: url(../images/checkbox-on.svg);
-	background-repeat: repeat;
-	right: 235px;
-	top: 0.1px;
 }
 
 .filter-item {
