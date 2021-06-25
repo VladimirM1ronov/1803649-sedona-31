@@ -218,7 +218,7 @@ h3 {
 }
 
 .features-list h3 {
-	font-size: 21px;
+	font-size: 18px;
 	line-height: 21px;
 	font-weight: 700;
 	text-align: center;
@@ -248,6 +248,7 @@ h3 {
 
 .secondary-text p {
 	text-align: center;
+	font-size: 12px;
 }
 
 .home::before {
@@ -512,6 +513,12 @@ h3 {
 	margin-bottom: 29px;
 }
 
+.modal-date::placeholder {
+	color: var(--basic-black);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
 .calendar-arrival {
 	position: absolute;
 	width: 21px;
@@ -674,7 +681,7 @@ h3 {
 	width: 100%;
 	box-sizing: border-box;
 	padding-left: 72px;
-	padding-right: 26px;
+	padding-right: 13px;
 	padding-bottom: 32px;
 	padding-top: 26.5px;
 	height: 217px;
@@ -746,21 +753,21 @@ input[type="checkbox"] {
 	user-select: none;
 }
 
-.filter-infastructure-item::after,
-.filter-habitation-item::after {
+.filter-infastructure-item label::before,
+.filter-habitation-item label::before {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	width: 23px;
 	height: 23px;
 	background-image: url(../images/checkbox-off.svg);
-	border-radius: 3px;
-	right: 239px;
+	right: 246px;
 	top: 0px;
 }
 
 
-.filter-habitation-checkbox:checked + .filter-habitation-item::after {
+.filter-habitation-checkbox:checked + label::before,
+.filter-infastructure-checkbox:checked + label::before {
 	background-image: url(../images/checkbox-on.svg);
 }
 
@@ -778,7 +785,7 @@ input[type="checkbox"] {
 
 .price-controls input {
 	width: 158px;
-	height: 36px;
+	height: 30px;
 	background-color: rgba(0, 0, 0, 0);
 	border: 2px solid var(--basic-white);
 	color: var(--basic-white);
@@ -806,11 +813,11 @@ input[type="checkbox"] {
 }
 
 .filter-item legend {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .range-filter {
-	margin-bottom: 30px;
+	margin-bottom: 34px;
 }
 
 .range-controls {
@@ -851,9 +858,9 @@ input[type="checkbox"] {
 	background-color: rgba(0, 125, 215, 0.1);
 	border: 2px solid var(--basic-white);
 	color: var(--basic-white);
-	margin-left: 81px;
+	margin-left: 85px;
 	margin-right: 142px;
-	padding: 10px 36px;
+	padding: 6px 32px;
 }
 
 .show:hover {
@@ -864,26 +871,27 @@ input[type="checkbox"] {
 .sorting {
 	box-sizing: border-box;
 	display: grid;
-	grid-template-columns: 180px  min-content 1fr 40px;
+	grid-template-columns: 163px  min-content 1fr 40px;
 	height: 86px;
 	background-color: var(--basic-white);
 	padding-right: 73px;
-	padding-left: 94px;
+	padding-left: 72px;
 	padding-top: 29px;
 	padding-bottom: 33px;
 }
 
 .sorting  h2 {
-	font-size: 21px;
+	font-size: 19px;
 	margin: 0;
 	padding: 0;
 	margin-right: 30px;
 }
 
 .sorting p {
+	font-size: 12px;
 	margin: 0;
 	padding: 0;
-	margin-right: 40px;
+	margin-right: 32px;
 }
 
 .sorting-link {
@@ -892,7 +900,7 @@ input[type="checkbox"] {
 	text-decoration: none;
 	color: var(--basic-grey);
 	border-bottom: 1px dashed var(--basic-blue);
-	margin-right: 32px;
+	margin-right: 24px;
 }
 
 .sorting-link:hover {
@@ -912,12 +920,17 @@ input[type="checkbox"] {
 	margin-right: 8px;
 }
 
+.decInc-links {
+	margin-top: 4px;
+	margin-left: 6px;
+}
+
 /*Hotels*/
 
 .hotel-list {
 	border-top: 1px solid var(--basic-lightgrey);
 	padding-top: 30px;
-/*	padding-left: 73px;
+/*padding-left: 73px;
 	padding-right: 92px;*/
 	background-color: var(--basic-white);
 }
@@ -946,7 +959,7 @@ input[type="checkbox"] {
 .hotel-list-item {
 	display: grid;
 	grid-template-columns: min-content 1fr min-content;
-	margin-top: 30px;
+	margin-top: 27px;
 	border-bottom: 1px solid var(--basic-lightgrey);
 	padding-bottom: 33px;
 }
@@ -966,7 +979,7 @@ input[type="checkbox"] {
 }
 
 .hotel-heading {
-	font-size: 21px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 700;
 }
@@ -975,7 +988,7 @@ input[type="checkbox"] {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 210px;
+	width: 180px;
 	margin-bottom: 11px;
 	margin-right: 12px;
 	margin-top: 10px;
@@ -991,15 +1004,15 @@ input[type="checkbox"] {
 }
 
 .more-detailed {
-	padding: 6px 16px;
+	padding: 6px 15px;
 	background-color: var(--basic-blue);
 	text-decoration: none;
 	color: var(--basic-white);
-	margin-right: 6px;
+	margin-right: 1px;
 }
 
 .book {
-	padding: 6px 16px;
+	padding: 6px 15px;
 	background-color: var(--basic-brown);
 	text-decoration: none;
 	color: var(--basic-white);
@@ -1039,7 +1052,7 @@ input[type="checkbox"] {
 	width: 75px;
 	height: 17px;
 	background-image: url(../images/star.svg);
-	top: -56px;
+	top: -66px;
 	left: 33px;
 }
 
@@ -1049,7 +1062,7 @@ input[type="checkbox"] {
 	width: 56px;
 	height: 17px;
 	background-image: url(../images/star.svg);
-	top: -56px;
+	top: -66px;
 	left: 52px;
 }
 
@@ -1059,6 +1072,6 @@ input[type="checkbox"] {
 	width: 37px;
 	height: 17px;
 	background-image: url(../images/star.svg);
-	top: -56px;
+	top: -66px;
 	left: 76px;
 }
