@@ -525,6 +525,9 @@ h3 {
 	height: 23px;
 	top: 62px;
 	left: 477px;
+	border-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .calendar-departure {
@@ -533,6 +536,9 @@ h3 {
 	height: 23px;
 	top: 129px;
 	left: 477px;
+	border-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .calendar-arrival:hover path,
@@ -660,6 +666,7 @@ h3 {
 	background-color: var(--basic-blue);
 	color: var(--basic-white);
 	border-style: none;
+	text-transform: uppercase;
 }
 
 .searching-modal-button:hover {
