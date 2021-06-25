@@ -58,7 +58,7 @@ h3 {
 	margin: 0;
 	padding: 0;
 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 26px;
 	color: var(--basic-dark);
 	text-transform: uppercase;
@@ -105,7 +105,11 @@ h3 {
 }
 
 .menu-item {
-	width: 264px;
+	width: 238px;
+}
+
+.menu-item:nth-child(2) {
+	margin-right: 104px;
 }
 
 .menu-item-info,
@@ -168,7 +172,7 @@ h3 {
 }
 
 .text h2{
-	font-size: 21px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 700;
 	margin: 0;
@@ -178,7 +182,7 @@ h3 {
 	margin: 0;
 	vertical-align: bottom;
 	color: var(--basic-dark);
-	margin-top: 56px;
+	margin-top: 43px;
 }
 
 /*features*/
@@ -315,24 +319,24 @@ h3 {
 }
 
 .searching-hotel-main p {
-	margin-bottom: 53px;
+	margin-bottom: 43px;
 }
 
 .searching-hotel h2 {
-	font-size: 30px;
+	font-size: 27px;
 	font-weight: 700;
 	line-height: 24px;
 	color: var(--basic-black);
 	margin: 0;
-	margin-bottom: 24px;
+	margin-bottom: 31px;
 }
 
 .searching-hotel-button {
 	background-color: var(--basic-brown);
 	color: var(--basic-white);
 	text-transform: uppercase;
-	padding: 30px 117px;
-	font-size: 21px;
+	padding: 33px 141px;
+	font-size: 18px;
 	font-weight: 700;
 	border-style: none;
 }
@@ -388,6 +392,7 @@ h3 {
 	font-weight: 700;
 	font-size: 21px;
 	color: var(--basic-black);
+	margin-left: 18px;
 }
 
 .info p {
