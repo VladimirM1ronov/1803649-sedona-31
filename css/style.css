@@ -381,11 +381,17 @@ h3 {
 }
 
 .catalog-footer {
+	box-sizing: border-box;
+	width: 1200px;
+	height: 120px;
+	bottom: 0px;
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
 	background-color: rgba(255, 255, 255, 0.85);
 	padding-right: 136px;
 	padding-left: 136px;
+	padding-top: 23px;
+	padding-bottom: 36px;
 }
 
 .info {
