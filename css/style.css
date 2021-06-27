@@ -51,6 +51,7 @@ h3 {
 
 .button {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .page-body {
