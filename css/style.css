@@ -692,6 +692,7 @@ h3 {
 	padding-bottom: 32px;
 	padding-top: 26.5px;
 	height: 217px;
+	background-color: var(--basic-blue);
 	background-image: url(../images/catalog_background.png);
 }
 
