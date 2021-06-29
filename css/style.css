@@ -320,7 +320,7 @@ h3 {
 }
 
 .searching-hotel-main p {
-	margin-bottom: 43px;
+	margin-bottom: 45px;
 }
 
 .searching-hotel h2 {
@@ -482,6 +482,7 @@ h3 {
 /*Popup*/
 
 .modal {
+	display: block;
 	position: absolute;
 	box-sizing: border-box;
 	width: 568px;
@@ -492,6 +493,15 @@ h3 {
 	padding: 55px;
 	top: 291px;
 	left: 316px;
+	transform: translateY(-86px);
+	transition: transform 0.5s linear;
+	z-index: -1;
+}
+
+.modal-show {
+	display: block;
+	transform: translateY(0);
+	z-index: 0;
 }
 
 .searching-form {
@@ -1101,3 +1111,4 @@ input[type="checkbox"] {
 	top: -66px;
 	left: 76px;
 }
+
