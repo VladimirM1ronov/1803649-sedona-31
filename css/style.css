@@ -378,7 +378,7 @@ h3 {
 .main-footer {
 	box-sizing: border-box;
 	width: 1200px;
-	height: 120px;
+	height: auto;
 	position: absolute;
 	bottom: 0px;
 	display: grid;
@@ -581,8 +581,13 @@ h3 {
 }
 
 .searching-form label {
-	height: 26px;
+	height: auto;
 	margin-right: 26px;
+}
+
+.calendar-arrival + label {
+	width: 91px;
+	margin-bottom: 10px;
 }
 
 .searching-form label:nth-of-type(2) {
@@ -727,9 +732,9 @@ h3 {
 	box-sizing: border-box;
 	padding-left: 72px;
 	padding-right: 13px;
-	padding-bottom: 32px;
+	padding-bottom: 7px;
 	padding-top: 26.5px;
-	height: 217px;
+	height: auto;
 	background-color: var(--basic-blue);
 	background-image: url(../images/catalog_background.png);
 }
