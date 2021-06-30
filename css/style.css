@@ -11,6 +11,12 @@
 	--basic-light: #F2F2F2;
 	--basic-lightblack: #EBEBEB;
 	--basic-brightgrey: #E5E5E5;
+	--basic-darkblue: #5496BD;
+	--basic-cyan: #669EC0;
+	--basic-darkbrown: #503E33;
+	--basic-chocolate: #604E43;
+	--basic-black-rgb: 0, 0, 0;
+	--basic-white-rgb: 255, 255, 255;
 }
 
 /*Global*/
@@ -346,13 +352,13 @@ h3 {
 }
 
 .searching-hotel-button:hover {
-	background-color: #604E43;
+	background-color: var(--basic-chocolate);
 
 }
 
 .searching-hotel-button:focus {
-	background-color: #503E33;
-	color: rgba(255, 255, 255, 0.3);
+	background-color: var(--basic-darkbrown);
+	color: rgba(var(--basic-white-rgb), 0.3);
 }
 
 .map {
@@ -377,7 +383,7 @@ h3 {
 	bottom: 0px;
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
-	background-color: rgba(255, 255, 255, 0.85);
+	background-color: rgba(var(--basic-white-rgb), 0.85);
 	padding-right: 136px;
 	padding-left: 136px;
 	padding-top: 23px;
@@ -391,7 +397,7 @@ h3 {
 	bottom: 0px;
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
-	background-color: rgba(255, 255, 255, 0.85);
+	background-color: rgba(var(--basic-white-rgb), 0.85);
 	padding-right: 136px;
 	padding-left: 136px;
 	padding-top: 23px;
@@ -444,11 +450,11 @@ h3 {
 }
 
 .social-button:hover {
-	background-color: #669EC0;
+	background-color: var(--basic-cyan);
 }
 
 .social-button:focus {
-	background-color: #5496BD;
+	background-color: var(--basic-darkblue);
 }
 
 .social-button:focus path {
@@ -640,7 +646,7 @@ h3 {
 	width: 39px;
 	border-style: none;
 	background-color: var(--basic-light);
-	color: rgba(0, 0, 0, 0);
+	color: rgba(var(--basic-white-rgb), 0);
 }
 
 
@@ -698,12 +704,12 @@ h3 {
 }
 
 .searching-modal-button:hover {
-	background-color: #669EC0;
+	background-color: var(--basic-cyan);
 }
 
 .searching-modal-button:focus {
-	background-color: #5496BD;
-	color: rgba(255, 255, 255, 0.3);
+	background-color: var(--basic-darkblue);
+	color: rgba(var(--basic-white-rgb), 0.3);
 }
 
 /*Catalog*/
@@ -830,7 +836,7 @@ input[type="checkbox"] {
 .price-controls input {
 	width: 158px;
 	height: 30px;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(var(--basic-white-rgb), 0);
 	border: 2px solid var(--basic-white);
 	color: var(--basic-white);
 	text-align: center;
@@ -914,7 +920,7 @@ input[type="checkbox"] {
 .show {
 	display: block;
 	font-size: 16px;
-	background-color: rgba(0, 125, 215, 0);
+	background-color: rgba(var(--basic-white-rgb), 0);
 	border: 2px solid var(--basic-white);
 	color: var(--basic-white);
 	margin-left: 85px;
@@ -1078,7 +1084,7 @@ input[type="checkbox"] {
 }
 
 .hotel-heading a:focus {
-	color: rgba(0, 0, 0, 0.3);
+	color: rgba(var(--basic-black-rgb), 0.3);
 }
 
 .more-detailed {
@@ -1099,21 +1105,21 @@ input[type="checkbox"] {
 }
 
 .more-detailed:hover {
-	background-color: #669EC0;
+	background-color: var(--basic-cyan);
 }
 
 .more-detailed:focus {
-	background-color: #669EC0;
-	color: rgba(255, 255, 255, 0.3);
+	background-color: var(--basic-darkblue);
+	color: rgba(var(--basic-white-rgb), 0.3);
 }
 
 .book:hover {
-	background-color: #604E43;
+	background-color: var(--basic-chocolate);
 }
 
 .book:focus {
-	background-color: #604E43;
-	color: rgba(255, 255, 255, 0.3);	
+	background-color: var(--basic-darkbrown);
+	color: rgba(var(--basic-white-rgb), 0.3);	
 }
 
 .rating {
